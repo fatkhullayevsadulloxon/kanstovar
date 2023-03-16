@@ -6,10 +6,30 @@
     --dark: #1D1D27;
 }
 
+.heading{
+    font-family: "Gilroy-bold";
+}
+.heading2{
+    font-family: "Gilroy";
+}
+
+
+
 .img{
     border-radius: 10px;
-    max-width: 200px;
-    max-height: 120px;
+    max-width: 400px;
+    max-height: 150px;
+}
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-FREE/Gilroy-Light.otf');
+}
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.otf');
 }
 
 
@@ -74,6 +94,13 @@ h6,
     height: 48px;
 }
 
+@media (max-width: 430px) {
+    .img{
+        max-width: 150px;
+        max-height: 120px;
+    }
+}
+
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -86,6 +113,7 @@ h6,
 }
 
 
+
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     position: relative;
@@ -94,12 +122,38 @@ h6,
     color: var(--light) !important;
     outline: none;
     transition: .5s;
+    font-family: "Gilroy";
+}
+
+.sticky-top{
+    background-color: #2124B1 !important;
+}
+
+.sticky-top:hover .buy{
+    color: white;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--light) !important;
+    
 }
+
+.result{
+    font-size: 13px;
+    margin-left: -12px;
+    color: #2124B1;
+    font-family: "Gilroy-bold";
+}
+
+.result-border{
+background-color: white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    /* margin-left: -3px; */
+}
+
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
@@ -279,8 +333,22 @@ box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.69);
     align-items: center;
     justify-content: center;
     color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
     transition: .5s;
+}
+
+.input-group{
+    border: none !important;
+    background-color: rgb(221, 220, 220) !important;
+    margin-top: 10px;
+    height: 50px;
+    font-family: sans-serif;
+    outline: none;
+    border-radius: 5px;
+}
+
+.service-item:hover .btn-buy{
+    background-color: white;
+    color: #2124B1;
 }
 
 .service-item:hover .service-icon {
@@ -502,7 +570,7 @@ box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.69);
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Gilroy";
     font-weight: 900;
     margin-right: 10px;
 }
