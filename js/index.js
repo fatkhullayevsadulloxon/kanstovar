@@ -45,7 +45,6 @@ const getCountryData = function (data) {
 
         if (isBookmarkBtn) {
             const filmId = e.target.dataset.btnId;
-            elResult.textContent = count++
 
             fetch(`https://kansmir.iprogrammer.uz/product/get/${filmId}`)
                 .then(res => res.json())
