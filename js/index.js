@@ -10,6 +10,47 @@ const elInputName = document.querySelector(".input-name")
 const elInputLast = document.querySelector(".input-last")
 const elInputNumber = document.querySelector(".input-number")
 const elFormData = document.querySelector(".form-data")
+const elFormInput = document.querySelector(".form-input")
+const elForm = document.querySelector(".form")
+const elSearchList = document.querySelector(".list-search")
+
+
+const renderSearch = function(search){
+    for(let searchArr of search){
+        const html = `
+            <p>${searchArr.name}</p>
+        `
+
+        elSearchList.insertAdjacentHTML("beforeend", html)
+    }
+}
+
+
+const getSearch = (inputValue) => {
+    console.log(inputValue);
+    
+    const formData = new FormData
+    fetch(`https://kansmir.iprogrammer.uz/products/search/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": 'multipart/form-data; boundary=something',
+        },
+        body:{
+            "content": inputValue
+        } 
+    })
+    .then(res => res.json())
+    .then(data => renderSearch(data))
+}
+
+elForm.addEventListener("input", (e) => {
+    e.preventDefault()
+    const inputValue = elFormInput.value
+
+
+    getSearch(inputValue)
+
+})
 
 
 let lstore;
@@ -22,7 +63,7 @@ const getCountryData = function (data) {
     for (let dataArr of data) {
         const html = `
               <div class="col-lg-4 card-border col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                        <div id="${dataArr.id}" class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <img class="img mt-5" src="${dataArr.image}" >
                             </div>
@@ -45,6 +86,8 @@ const getCountryData = function (data) {
 
         if (isBookmarkBtn) {
             const filmId = e.target.dataset.btnId;
+            
+            e.target.textContent = "Saqlandi✅"
 
             fetch(`https://kansmir.iprogrammer.uz/product/get/${filmId}`)
                 .then(res => res.json())
