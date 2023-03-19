@@ -44,46 +44,97 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-            
-                    <img src="img/logo2.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Bosh sahifa</a>
-                        <a href="about.html" class="nav-item nav-link">Haqida</a>
-                        <a href="service.html" class="nav-item nav-link">Xizmatlar</a>
-                        <a href="project.html" class="nav-item nav-link">Katalog</a>
-                        <a href="team.html" class="nav-item nav-link active">Savatcha</a>
+        <div class=" p-0">
+            <div class="bg-primary container">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="" class="navbar-brand p-0">
+                        <img src="img/logo2.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div>
+                        <form method="post" id="search-form" class="form mt-4 d-flex h-100 w-100">
+                            <input id="search-input" type="text" class="mt-auto mb-auto form-input ms-auto"
+                                placeholder="search">
+                            <!-- <button class="btn btn-primary bg-danger mt-auto mb-auto" style="height: 50px; margin-left: 10px;">Qidirish</button> -->
+                            <p class="d-none search-form-result"></p>
+                        </form>
+                        <ul class="list-search">
+        
+                        </ul>
+        
                     </div>
-            
-            
-                </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+                        <div class="navbar-nav ms-auto py-0">
+        
+                            <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
+                            <a href="about.html" class="nav-item nav-link">Haqida</a>
+                            <a href="service.html" class="nav-item nav-link">Xizmatlar</a>
+                            <a href="project.html" class="nav-item nav-link">Katalog</a>
+                            <a href="korzina.html" class="nav-item d-flex nav-link korzina">
+                                <p>Savatcha</p>
+                                <div class="d-flex">
+        
+                                </div>
+                            </a>
+        
+        
+                        </div>
+                </nav>
+            </div>
+        
+            <div class="py-5 container-fluid bg-primary mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Korzina</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="./index.html">Bosh sahifa</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="./about.html">Haqida</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Korzina</li>
-                                </ol>
-                            </nav>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn heading">Kansmirshop-uz</h1>
+                            <p class="text-white pb-3 animated zoomIn heading2">Shu vaqtgacha biz 3000 dan oshiq davlat
+                                muassasalari va korxonalari bilan ishladik. 500 dan ko'p xususiy kompaniyalar
+                                bilan ishlaymiz.</p>
+                            <a href="service.html"
+                                class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Katalog</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#!"
+                                class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Aloqa</a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Bog'lanish</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-data">
+                                                <div>
+                                                    <input class="input-group input-name" type="text"
+                                                        placeholder="Ismingizni kiriting">
+                                                </div>
+                                                <div>
+                                                    <input class="input-group input-last" type="text"
+                                                        placeholder="Familyangizni kiriting">
+                                                </div>
+                                                <div>
+                                                    <input class="input-group input-number" value="998" type="number"
+                                                        placeholder="Telefon raqam kiriting">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary send-data">Yuborish</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid" src="img/hero.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- Navbar & Hero End -->
 
 

@@ -206,7 +206,7 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        background: #2124B1;
     }
 
     .navbar-light .navbar-collapse {
@@ -227,6 +227,12 @@ h6,
 
     .navbar-light .navbar-brand img {
         max-height: 45px;
+    }
+
+    .navbar{
+        background-color: #2124B1 !important;
+        width: 100%;
+        
     }
 }
 
