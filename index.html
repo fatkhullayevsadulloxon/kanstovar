@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -22,11 +23,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Libraries Stylesheet --> 
+    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +39,8 @@
 <body>
     <div class="bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -48,68 +50,84 @@
 
         <!-- Navbar & Hero Start -->
         <div class=" p-0">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img src="img/logo2.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <div>
-                            <form class="form">
-                                <input type="text" class="form-control form-input" placeholder="search">
-                            </form>
-                            <ul class="list-search">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="" class="navbar-brand p-0">
+                        <img src="img/logo2.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div>
+                        <form method="post" id="search-form" class="form mt-4 d-flex h-100 w-100">
+                            <input id="search-input" type="text" class="mt-auto mb-auto form-input ms-auto"
+                                placeholder="search">
+                            <!-- <button class="btn btn-primary bg-danger mt-auto mb-auto" style="height: 50px; margin-left: 10px;">Qidirish</button> -->
+                            <p class="d-none search-form-result"></p>
+                        </form>
+                        <ul class="list-search">
 
-                            </ul>
-                        </div>
-                        <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
-                        <a href="about.html" class="nav-item nav-link">Haqida</a>
-                        <a href="service.html" class="nav-item nav-link">Xizmatlar</a>
-                        <a href="project.html" class="nav-item nav-link">Katalog</a>
-                        <a href="korzina.html" class="nav-item d-flex nav-link korzina">
-                            <p>Savatcha</p>
-                            <div class="d-flex">
-            
-                            </div>
-                        </a>
-                        
-            
+                        </ul>
+
                     </div>
-            </nav>
-         </div>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                        <div class="navbar-nav ms-auto py-0">
+
+                            <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
+                            <a href="about.html" class="nav-item nav-link">Haqida</a>
+                            <a href="service.html" class="nav-item nav-link">Xizmatlar</a>
+                            <a href="project.html" class="nav-item nav-link">Katalog</a>
+                            <a href="korzina.html" class="nav-item d-flex nav-link korzina">
+                                <p>Savatcha</p>
+                                <div class="d-flex">
+
+                                </div>
+                            </a>
+
+
+                        </div>
+                </nav>
+            </div>
 
             <div class="py-5 container-fluid bg-primary mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated zoomIn heading">Kansmirshop-uz</h1>
-                            <p class="text-white pb-3 animated zoomIn heading2">Shu vaqtgacha biz 3000 dan oshiq davlat muassasalari va korxonalari bilan ishladik. 500 dan ko'p xususiy kompaniyalar
-                            bilan ishlaymiz.</p>
-                            <a href="service.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Katalog</a>
-                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#!"  class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Aloqa</a>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <p class="text-white pb-3 animated zoomIn heading2">Shu vaqtgacha biz 3000 dan oshiq davlat
+                                muassasalari va korxonalari bilan ishladik. 500 dan ko'p xususiy kompaniyalar
+                                bilan ishlaymiz.</p>
+                            <a href="service.html"
+                                class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Katalog</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#!"
+                                class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Aloqa</a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5" id="exampleModalLabel">Bog'lanish</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <form class="form-data">
                                                 <div>
-                                                    <input class="input-group input-name" type="text" placeholder="Ismingizni kiriting">
+                                                    <input class="input-group input-name" type="text"
+                                                        placeholder="Ismingizni kiriting">
                                                 </div>
                                                 <div>
-                                                    <input class="input-group input-last" type="text" placeholder="Familyangizni kiriting">
+                                                    <input class="input-group input-last" type="text"
+                                                        placeholder="Familyangizni kiriting">
                                                 </div>
                                                 <div>
-                                                    <input class="input-group input-number" value="998" type="number" placeholder="Telefon raqam kiriting">
+                                                    <input class="input-group input-number" value="998" type="number"
+                                                        placeholder="Telefon raqam kiriting">
                                                 </div>
-                                                <button type="submit" class="btn btn-primary send-data" >Yuborish</button>
+                                                <button type="submit"
+                                                    class="btn btn-primary send-data">Yuborish</button>
                                             </form>
                                         </div>
                                     </div>
@@ -123,7 +141,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Navbar & Hero End -->
 
         <!-- About Start -->
@@ -136,12 +154,15 @@
                             <h2 class="mt-2 heading">Biz haqimizda</h2>
                         </div>
                         <p class="mb-4 heading2">2008-yildan beri faoliyat yuritamiz. Xabaringiz bormi?
-                        ⚡️ Shu vaqtgacha biz 3000 dan oshiq davlat muassasalari va korxonalari bilan ishladik. 500 dan ko'p xususiy kompaniyalar
-                        bilan ishlaymiz.</p>
+                            ⚡️ Shu vaqtgacha biz 3000 dan oshiq davlat muassasalari va korxonalari bilan ishladik. 500
+                            dan ko'p xususiy kompaniyalar
+                            bilan ishlaymiz.</p>
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <h6 class="mb-3 heading"><i class="fa fa-check text-primary me-2 h"></i>Yetkazib berish xizmati</h6>
-                                <h6 class="mb-0 heading"><i class="fa fa-check text-primary me-2"></i>Sifatli mahsulotlar</h6>
+                                <h6 class="mb-3 heading"><i class="fa fa-check text-primary me-2 h"></i>Yetkazib berish
+                                    xizmati</h6>
+                                <h6 class="mb-0 heading"><i class="fa fa-check text-primary me-2"></i>Sifatli
+                                    mahsulotlar</h6>
                             </div>
                             <div class="col-sm-6">
                                 <h6 class="mb-3 heading"><i class="fa fa-check text-primary me-2"></i>24/7 yordam</h6>
@@ -161,11 +182,14 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" id="products">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="position-relative d-inline text-primary ps-4 heading2">Xizmatlar</h6>
                     <h2 class="mt-2 heading">Bizni mahsulotlarimiz bilan tanishing</h2>
+                    <div class="mt-4 mb-4">
+
+                    </div>
                 </div>
                 <div class="row g-4 product">
                     <h3 class="heading2 loading2 d-none">Loading...</h3>
@@ -181,7 +205,7 @@
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="position-relative d-inline text-primary ps-4 heading2">Katalog</h6>
                     <h2 class="mt-2 heading">Katalog</h2>
-                </div>  
+                </div>
                 <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="col-12 text-center">
                         <ul class="list-inline mb-5" id="portfolio-flters">
@@ -196,7 +220,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio1.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio1.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Ishxona</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Doska</a>
@@ -208,7 +233,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio2.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio2.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>O'quv markaz</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Kanseleriya</a>
@@ -220,7 +246,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio3.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio3.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Ishxona</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Jihozlar</a>
@@ -232,7 +259,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio4.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio4.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Ishxona</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Printer</a>
@@ -244,7 +272,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio5.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio5.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Ishxona</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">A4 qog'oz</a>
@@ -256,7 +285,8 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio6.jpg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="img/portfolio6.jpg" data-lightbox="portfolio"><i
+                                        class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Haqida</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Kompaniya</a>
@@ -268,7 +298,7 @@
             </div>
         </div>
         <!-- Portfolio End -->
-        
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -280,10 +310,12 @@
                         <p class="heading2"><i class="fa fa-phone-alt me-3"></i>+998 97 572 11 11</p>
                         <p class="heading2"><i class="fa fa-envelope me-3"></i>kansmirshop@email.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://t.me/kansmir_shop"><i class="fab fa-telegram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://t.me/kansmir_shop"><i
+                                    class="fab fa-telegram"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/kansmir.uz/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/kansmir.uz/"><i
+                                    class="fab fa-instagram"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#!"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
@@ -302,9 +334,11 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 heading2">
-                            &copy; <a class="border-bottom heading2" href="#">Kanmirshop.uz </a>Barcha huquqlar himoyalangan 
-							
-							Sayt yaratuvchisi   <a class="border-bottom heading" href="https://t.me/Tbtuzofficial">TBTGROUP </a>
+                            &copy; <a class="border-bottom heading2" href="#">Kanmirshop.uz </a>Barcha huquqlar
+                            himoyalangan
+
+                            Sayt yaratuvchisi <a class="border-bottom heading"
+                                href="https://t.me/Tbtuzofficial">TBTGROUP </a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
