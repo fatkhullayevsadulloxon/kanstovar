@@ -24,7 +24,7 @@ const getSearchData = function (data) {
         console.log(dataArr.id);
 
         const html = ` 
-      <div class="">
+      <div class="list-serach">
         <a class="text-dark d-block positon-absolute search-block" href="#${dataArr.id}">${dataArr.name}</a>
       </div>
     `
@@ -115,10 +115,17 @@ const getSearch = (inputValue) => {
 //         e.target.focus()
 //     },1000)
 //  })
+elSearchList.addEventListener("click", (e) => {
+    const doska = e.target.matches(".search-block")
+    elSearchList.classList.add("d-none")
+
+
+})
 searchInput.addEventListener("input", (e) => {
     let value;
 
     value = e.target.value;
+
     console.log(value);
     if (value == "") {
         getCountry();
